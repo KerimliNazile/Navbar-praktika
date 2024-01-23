@@ -1,0 +1,14 @@
+#Products {
+    min-height: 80vh;
+   
+    .ProductArea {
+        //  margin-top: 100px;
+
+        .CardContiner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+}

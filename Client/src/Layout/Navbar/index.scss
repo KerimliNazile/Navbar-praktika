@@ -1,0 +1,120 @@
+nav {
+    background-color: beige;
+    // position: fixed;
+    // width: 100%;
+    // z-index: 2;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    .Logo {}
+
+    .Main {
+        #navin {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            li a {
+                color: black;
+            }
+        }
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+.navlist {
+    display: none;
+    flex-direction: column;
+  
+    background-color: aquamarine;
+    height: 40vh;
+    width: 280px;
+    transition: 0.3s ease-in-out;
+
+    li {
+        font-size: 20px;
+    }
+
+    li a {
+        color: black;
+    }
+}
+
+.navlist_close {
+    right: -300px;
+}
+
+.navlist_active {
+    right: 0px;
+}
+
+@media only screen and (max-width: 640px) {
+    nav {
+        background-color: beige;
+        // position:fixed;
+        // width: 100%;
+        // z-index: 2;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .Logo {}
+
+        .Main {
+            #navin {
+                display: flex;
+                right: -300px;
+                display: none;
+                // font-size: 20px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // gap: 30px;
+
+                li a {
+                    color: black;
+                }
+            }
+        }
+
+        .mobile {
+            display: block;
+
+            .icon {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .navlist {
+
+        display: flex;
+        // flex-direction: column;
+        // background-color: aquamarine;
+        // height: 40vh;
+        // width: 280px;
+        // transition: 0.3s ease-in-out;
+
+        li {
+            font-size: 20px;
+        }
+
+        li a {
+            color: black;
+        }
+    }
+
+    #navin.active {
+        right: 0px;
+    }
+}
